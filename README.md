@@ -6,3 +6,6 @@ Plots and stats have been generated per our in person discussion on March 16 202
 In addition, I have regenerated all of the plots from early February using version-tracked code available in github.
 
 All plots are provided at approximately the right scale to be useful for your figures using 11 point as the base font size.  This can be modified if is not legible for you. 
+
+Commments and questions below this line:
+___________________________________________
