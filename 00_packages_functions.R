@@ -393,3 +393,13 @@ plot_cells_alt<-function (cds, x = 1, y = 2, reduction_method = c("UMAP", "tSNE"
   g
   
 }
+
+cumulative_max_expr<-function(extracted_df,gene_list){
+  return(extracted_df %>% 
+           tbl_df() %>% 
+           select(-feature_id,-gene_short_name,-id) %>% 
+           pivot_wider(names_from = feature_label, values_from = value) %>% 
+           replace(., is.na(.),0) %>%
+           mutate(max_val = do.call(pmax, c(select(., one_of(gene_list))))) %>%
+           mutate(max_val = na_if(max_val,0)))
+}

@@ -1,3 +1,4 @@
+source('/workspace/workspace_pipelines/mace_paper_2020/00_packages_functions.R', echo=TRUE)
 load.pigz("mace_paper_2020.RData")
 
 demo_genes<-c("CD14", "IL7R", "CD8A", "KLRB1", "CD79A", "FCGR3A", "PF4", "IL3RA","PCNA")
