@@ -1,0 +1,12 @@
+cluster_assignment,n,running_total
+MDSC,3271,3271
+CD8,2442,5713
+Naive/Memory T,2274,7987
+NK,998,8985
+B,875,9860
+high-MT T,534,10394
+CD16+ Monocytes,397,10791
+Granulocyte,171,10962
+Platelet,101,11063
+pDC,64,11127
+Proliferating T,23,11150
