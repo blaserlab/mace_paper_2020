@@ -1,7 +1,9 @@
 #libraries
 library("monocle3")
-library("cowplot"); theme_set(theme_cowplot(font_size = 11))
 library("tidyverse")
+library("cowplot")
+theme_set(theme_cowplot(font_size = 11))
+
 library("fastSave")
 
 #custom operators
