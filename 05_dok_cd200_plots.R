@@ -31,9 +31,9 @@ max_plot
 save_plot(max_plot, filename = "plots_out/max_plot.pdf", base_width = 4, base_height = 3)
 
 # plot each individually
-plot_cells_alt(cds_trimmed, genes = "DOK2", cell_size = 1) %>% save_plot(filename = "plots_out/dok2.pdf", base_width = 4, base_height = 3)
-plot_cells_alt(cds_trimmed, genes = "DOK1", cell_size = 1) %>% save_plot(filename = "plots_out/dok1.pdf", base_width = 4, base_height = 3)
-plot_cells_alt(cds_trimmed, genes = "CD200R1", cell_size = 1) %>% save_plot(filename = "plots_out/cd200r1.pdf", base_width = 4, base_height = 3)             
+plot_cells_alt(cds_trimmed, genes = "DOK2", cell_size = 1, label_cell_groups = FALSE) %>% save_plot(filename = "plots_out/dok2.pdf", base_width = 4, base_height = 3)
+plot_cells_alt(cds_trimmed, genes = "DOK1", cell_size = 1, label_cell_groups = FALSE) %>% save_plot(filename = "plots_out/dok1.pdf", base_width = 4, base_height = 3)
+plot_cells_alt(cds_trimmed, genes = "CD200R1", cell_size = 1, label_cell_groups = FALSE) %>% save_plot(filename = "plots_out/cd200r1.pdf", base_width = 4, base_height = 3)             
 
 
 save.image.pigz("mace_paper_2020.RData",n.cores = 39)
